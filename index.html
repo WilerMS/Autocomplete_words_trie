@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/Trie.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Autocompletado con arbol</title>
+</head>
+
+<body>
+    <div class="App">
+        <div class="bg"></div>
+        <div class="container">
+            <div class="search_words" id="search_words">
+                <div class="search" id="search">
+                    <input type="text" id="input_search" 
+                        placeholder="Write a word">
+                </div>
+                <div class="result"  id="result">
+                    <div class="default_result">
+                        <h3>Autocomplete words with our default database. 
+                            <br>
+                            If you dont want it, you can add your own words.
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="import_words" id="import_words">
+                <div class="description">
+                    <h3>Import your words list</h3>
+                </div>
+                <div class="textarea">
+                    <textarea id="text_area" placeholder="Write the text word by word"></textarea>
+                    <div class="import_words_btn" id="import_words_btn">
+                        <i id="import_add" class="fas fa-plus"></i>
+                        <i id="clear_tree" class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="trie " id="trie">
+                <svg id="svg" data-name = "Layer 1" 
+                    xmlns="http://www.w3.org/2000/svg">
+                </svg>
+                <div id="marco"></div>
+            </div>
+
+            <div class="pop_up" id="pop_up">
+                <span>Words Added</span>
+            </div>
+
+            <nav class="nav">
+                <a id="search_word" class="navlink active">Search Word</a>
+                <a id="add_words" class="navlink">Add Words</a>
+                <a id="show_trie" class="navlink">Show Trie</a>
+            </nav>
+        </div>
+    </div>
+    
+    
+    
+
+    <!--
+    -->
+
+    <script src="JS/TreeNode.js"></script>
+    <script src="JS/DrawTrie.js"></script>
+    <script src="JS/main.js"></script>
+    <script>
+        window.onresize = () => {
+            ShowTrie(Arbol);
+        }
+    </script>
+</body>
+</html>
