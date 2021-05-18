@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+		* {
+			font-family: 'Quicksand', sans-serif;font-family: 'Quicksand', sans-serif;
+		}
+		body {
+			overflow: hidden;
+		}
+		.trie {
+			position: relative;
+			display: none;
+			width: 100%;
+			height: calc(100% - 50px);
+			overflow: auto;
+			animation: expand .3s ease;
+		}
+		.trie::-webkit-scrollbar {
+			background: none;
+			width: 5px;
+			height: 5px;
+		}   
+		.trie::-webkit-scrollbar-thumb {
+			background: white;
+			width: 5px;
+			border-radius: 5px;
+			height: 5px;
+		}
+		.trie.active {
+			display: initial;
+		}
+		.default_trie {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+		}
+		#marco {
+			position: absolute;
+			z-index: 1;
+			display: flex;
+		}
+		.nodo {
+			margin: 10px;
+			display:flex;
+			
+		}
+		.nodo_padre {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		p {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 15px;
+			height: 15px;
+			background: white;
+			border-radius: 50%;
+			margin: 6px;
+			padding: 10px;
+			cursor: pointer;
+			transition: all .5s ease;
+			font-weight: bold;
+			box-shadow: 0 0 8px #0000008a;
+		}
+		.padre {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: auto;
+			height: auto;
+			border-radius: 15px;
+			margin-bottom: 50px;
+		}
+		p:hover {
+			transform: scale(1.07);
+			background: black;
+			color: white;
+			transition: all .5s ease;
+		}
+		.final {
+			background: #a7ffcc;
+		}
+		line {
+    		stroke:rgb(0,0,0);
+    		stroke-width:2;
+			box-shadow: 0 0 8px #0000008a;
+		}
+		#svg {
+			position: absolute;
+			stroke-dasharray: 3200;
+			background: none;	
+		}
