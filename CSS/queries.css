@@ -1,0 +1,10 @@
+@media (max-width: 710px) {
+    .container {
+        height: 80vh;
+        width: 90%;
+    }
+    .navlink {
+        width: 30%;
+        font-size: 14px;
+    }
+  }
