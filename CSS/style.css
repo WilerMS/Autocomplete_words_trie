@@ -13,9 +13,7 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    /*background: linear-gradient(90deg, rgba(78,212,255,0.7791491596638656) 0%, rgba(50,247,245,0.5606617647058824) 100%);*/
     font-family: 'Lato', sans-serif;
-    
 }
 
 .App {
@@ -57,7 +55,6 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
     .navlink:hover {
         background: #033f3d;
